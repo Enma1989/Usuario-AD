@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Usuarios no AD</title>
+  </head>
+  <body>
+    <header>
+      <section class="textos-header">
+        <h1>Criando Um Usuario AD</h1>
+        <h2>Guia passo a passo para Suporte <span>N1</span></h2>
+      </section>
+      <div class="wave" style="height: 150px; overflow: hidden">
+        <svg
+          viewBox="0 0 500 150"
+          preserveAspectRatio="none"
+          style="height: 100%; width: 100%"
+        >
+          <path
+            d="M0.00,49.98 C357.50,210.68 329.28,-87.33 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: none; fill: #fff"
+          ></path>
+        </svg>
+      </div>
+    </header>
+
+    <main>
+      <!--Primera seccion-->
+      <section>
+        <h2 class="titulo">Antes de começar, leia com atenção.!</h2>
+        <div class="contenedor-sobre-nos">
+          <img src="img/03_ideas.jpg" alt="ideias" class="imagen_nos" />
+
+          <div class="contenido_texto">
+            <p>
+              Criar um novo usuário no servidor AD é uma tarefa fácil, mas nem
+              por isso, devemos relaxar e não tomar medidas de segurança e
+              cuidados antes de começar. Para iniciar esta tarefa, devemos ter
+              em mãos as seguintes informações:
+            </p>
+            <ul class="lista">
+              <li>Nome completo do Usuario que será criado</li>
+              <li>
+                Informações importantes como departamento, a quem responde, etc.
+              </li>
+              <li>Usuario que usaremos como "espelho"</li>
+              <li>Permissões adicionais se precisar</li>
+              <li>Senha de acesso</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--Segunda Seccion-->
+
+      <section class="part">
+        <h2 class="titulo">Entrando no servidor AD</h2>
+        <div class="contenedor-sobre-nos">
+          <img
+            src="img/1.- Server Manager.jpg"
+            alt="ideias"
+            class="imagen_nos"
+          />
+          <div class="contenido_texto">
+            <h3 class="subtitulo">Acessando ao Server Manager</h3>
+            <p>
+              Acessamos com nossas credenciais ao site do JUMP, colocando nosso
+              usuário e senha, será feita uma verificação de duas etapas antes
+              de acessar ao site. Ao finalizar colocamos na barra de pesquisa o
+              nome da empresa que solicita a Criação do novo usuário;
+              selecionamos WAD (geralmente aparece com esse nome). Dentro do
+              servidor da empresa solicitante vamos ao menu de Windows Server, e
+              pesquisamos: "Server Manager" e apertamos entre. Selecionamos nos
+              resultados "Server Manager" Abrindo assim a tela que aparece na
+              imagem ao inicio.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Tercera Seccion-->
+
+      <section>
+        <h2 class="titulo">Active Directory Users and Computers</h2>
+        <div class="contenedor-sobre-nos">
+          <img src="img/3.-Active_Directory.jpg" alt="ideias" class="imagen_nos" />
+
+          <div class="contenido_texto">
+            <h3 class="subtitulo">Acesso ao Active Directory</h3>
+            <p>
+              Na tela do Server Manager vamos para a barra de opções e
+              procuramos "Tools", fazemos click no botão, aparecendo assim uma
+              lista de opções como na imagem ao lado. Na barra de opções
+              procuramos a opção: Active Directory users and Computers, fazemos
+              click e aguardamos a janela abrir.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Cuarta Seccion-->
+
+      <section class="part">
+        <h2 class="titulo">Active Directory Users and Computers II</h2>
+        <div class="contenedor-sobre-nos">
+          <img
+            src="img/4.- Tela_Active_Directory.jpg"
+            alt="ideias"
+            class="imagen_nos"
+          />
+          <div class="contenido_texto">
+            <h3 class="subtitulo">Pastas do Active Directory</h3>
+            <p>
+                Na tela do Active Directory encontramos as pastas que contém os dados
+                com as informações dos usuários e departamentos e outras informações.
+                Cada banco de dados tem pequenas diferenças que é bom conhecer de
+                cliente em cliente; na lista de pasta na esquerda encontraremos a
+                pasta que contém os departamentos da empresa, selecionamos para ver em
+                qual departamento estará o usuário que usaremos como espelho (deverá
+                ser o mesmo departamento onde trabalhara o novo usuário).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Quinta Seccion-->
+
+      <section>
+        <h2 class="titulo">Active Directory Users and Computers II</h2>
+        <div class="contenedor-sobre-nos">
+          <img
+            src="img/6.- Setor_Usuario.jpg"
+            alt="ideias"
+            class="imagen_nos"
+          />
+          <div class="contenido_texto">
+            <h3 class="subtitulo">Pastas do Active Directory</h3>
+            <p>
+                Fazemos click na pasta onde encontramos ao nosso usuário espelho...
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Sexta Seccion-->
+
+      <section class="part">
+        <h2 class="titulo">Active Directory Users and Computers II</h2>
+        <div class="contenedor-sobre-nos">
+          <img
+            src="img/7.- Usuario_espelho.jpg"
+            alt="ideias"
+            class="imagen_nos"
+          />
+          <div class="contenido_texto">
+            <h3 class="subtitulo">Aba Criação de Usuario</h3>
+            <p>
+                Fazemos click direito acima do nome de nosso usuário espelho, logo,
+        dentro da lista, selecionamos Copiar.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Septima Seccion-->
+
+      <section>
+        <h2 class="titulo">Active Directory Users and Computers II</h2>
+        <div class="contenedor-sobre-nos">
+          <img
+            src="img/10.- next_tela.jpg"
+            alt="ideias"
+            class="imagen_nos"
+          />
+          <div class="contenido_texto">
+            <h3 class="subtitulo">Aba Criação de Usuario</h3>
+            <p>
+                Passamos a preencher os campos da janela "Copy Object - User". Começamos
+        Colocando o primeiro nome do usuário, podemos deixar o campo "initials"
+        (Iniciais) em branco; seguidamente colocamos sobrenome, à medida que
+        Preenchemos os dados, o nome completo do usuário aparecera no campo
+        "Full name". No campo "user logon name" colocamos o nome de usuário que
+        usará o novo funcionário; falando disso, muitos clientes já usam um
+        formato de nome de usuário que devemos respeitar, toma muito cuidado e
+        atenção no chamado de criação de como deverá colocar em este campo.
+        automaticamente aparecerá no campo "User logon name (pre-Windows 200)" o
+        nome de usuário que acabamos de criar. ele ficará como a imagen
+        ao lado.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Optava Seccion-->
+
+      <section class="part">
+        <h2 class="titulo">Active Directory Users and Computers II</h2>
+        <div class="contenedor-sobre-nos">
+          <img
+            src="img/11.- criação_senha.jpg"
+            alt="ideias"
+            class="imagen_nos"
+          />
+          <div class="contenido_texto">
+            <h3 class="subtitulo">Aba Criação de Senha</h3>
+            <p>
+                Neste campo, colocamos a senha fornecida pelo solicitante, ou, colocamos
+        a senha criada por nós (sempre seguindo as normas e procedimentos
+        estabelecidos pelo departamento de Ciber Segurança da Gate7). A
+        universidade Federal do Recôncavo da Bahia, dá umas dicas que podemos
+        encontrar no site deles, no apartado: CyberSecurity: Utilize senhas com
+        8 ou mais caracteres, misture letras em maiúsculo e minúsculo, misture
+        letras, números e símbolos como (! @ # $ % & *), use a semelhança de
+        fonética como ("ca" e "k") ou visual como ("w" e "vv") (3=E) (5=S) (1 =
+        L / j = ! ou i) (8=B) (S / $ / 5) (A=@) (W=M) (0 / O / *).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Novena Seccion-->
+
+      <section>
+        <h2 class="titulo">Active Directory Users and Computers II</h2>
+        <div class="contenedor-sobre-nos">
+          <img
+            src="img/12.- definições_opções.jpg"
+            alt="ideias"
+            class="imagen_nos"
+          />
+          <div class="contenido_texto">
+            <h3 class="subtitulo">Aba Criação de Senha</h3>
+            <p>
+                Também encontraremos uma série de opções: “User must change password at
+        next logon” significa que o servidor solicitará mudar a senha para o
+        novo usuário na primeira vez que entre na conta do computador. “user
+        cannot change the password” significa que o usuário não poderá alterar a
+        senha pelos meios fornecidos por Windows. “Password never expires”
+        significa que a senha nunca expira. “Account is disabled” usamos esta
+        opção para desativar a conta do usuario.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Decima Seccion-->
+
+      <section class="part">
+        <h2 class="titulo">Active Directory Users and Computers II</h2>
+        <div class="contenedor-sobre-nos">
+          <img
+            src="img/13.- tela_confirmação.jpg"
+            alt="ideias"
+            class="imagen_nos"
+          />
+          <div class="contenido_texto">
+            <h3 class="subtitulo">Conferindo as informações</h3>
+            <p>
+                Nesta tela temos a confirmação do que foi feito nos passos anteriores,
+        por favor, confira bem todos os detalhes antes de finalizar o processo
+        de criação de usuário, se assegure que o nome esteja escrito conforme no
+        chamado, igualmente o nome de usuário e a opção que foi colocada para a
+        senha, seja que ela possa ser alterada no primeiro logon ou, que o
+        usuário não possa alterara-la.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Decimo primera Seccion-->
+
+      <section>
+        <h2 class="titulo">Parabéns, você criou um novo usuário no AD Server!</h2>
+        <div class="contenedor-sobre-nos">
+          <img
+            src="img/15_robit.jpg"
+            alt="ideias"
+            class="imagen_nos"
+          />
+          <div class="contenido_texto">
+            <h3 class="subtitulo">Bom Trabalho!</h3>
+            <p>
+                Você conseguiu criar um usuário no servidor AD, Parabéns
+        pelo esforço e dedicação em fazer um trabalho excelente na Gate7.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

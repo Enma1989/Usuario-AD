@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo{
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: underline red;
+}
+    .subtitulo{
+    color: red;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    }
+
+/*header*/
+header {
+    width: 100%;
+    height: 600px;
+    background: #fffff5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fffff5, #b20a2c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, hsla(60, 100%, 98%, 0.596), hsla(348, 89%, 37%, 0.596)), url(img/01_rojo.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+}
+
+.image_header {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 40px;    
+}
+
+.textos-header > h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 45px;
+    color: #fff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.textos-header > h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+/*Iniciando*/
+.contenedor-sobre-nos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen_nos {
+    width: 35%px;
+    height: 300px;
+    border-radius: 2%;
+}
+
+.sobre-nos .contenido_texto {
+    width: 40%;
+}
+
+.contenido_texto {
+    margin-bottom: 15px;
+    padding: 0px 0px 0px 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    width: 40%;
+}
+
+.contenido_texto p {
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+ .lista {
+    padding: 0px 0px 46px 25px;
+    font-weight: 300;
+    text-align: justify;
+ }
+
+ .part {
+    background-color: #f2f2f2;
+ }
